@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sonido">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="204dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="31dp"
+        android:foreground="@drawable/pianocola"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="281dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="277dp"
+        android:text="Servicio Musical"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPausar"
+        android:layout_width="199dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="86dp"
+        android:text="Pausar/Reanudar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonParar"
+        android:layout_width="201dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="79dp"
+        android:text="Parar Musica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPausar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
